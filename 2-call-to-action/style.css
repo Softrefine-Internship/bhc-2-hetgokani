@@ -16,11 +16,12 @@
 /* divided space in equal parts */
 .call_to_action_content,
 .call_to_action_image {
+  width: 600px;
   flex: 1fr;
 }
 /* main text content starts from here */
 .call_to_action_content {
-  margin: 0 100px 0 80px;
+  margin: 30px 100px 0 80px;
 }
 .call_to_action_img {
   height: 100%;
