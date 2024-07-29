@@ -1,1 +1,116 @@
 /* write your css here */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* container code */
+.container {
+  background-image: url(images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 1200px;
+  position: relative;
+}
+.logo {
+  width: 60px;
+  height: 60px;
+  margin: 10px 0 0 10px;
+}
+
+/* flex is used here in header */
+.header {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+
+  align-items: center;
+}
+.nav {
+  margin: 0 0 0 250px;
+}
+.nav_links {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0 0 0 40px;
+  color: black;
+  text-decoration: none;
+}
+/* used pseudo class */
+.nav_links:last-child {
+  margin: 0 0 0 200px;
+}
+/* CODE REUSEABILITY FOR ICON ARROW */
+.home_icons {
+  width: 15px;
+  height: 15px;
+  margin-right: 8px;
+}
+.title_content {
+  color: #495057;
+  border: 1px solid rgba(124, 116, 116, 0.61);
+  border-radius: 20px;
+  display: inline-block;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+  padding: 5px;
+}
+/* used to make content in center */
+.hero_content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.title_content_readmore {
+  text-decoration: none;
+  color: blue;
+  font-weight: 200;
+}
+.title_content_heading {
+  font-size: 60px;
+  font-family: sans-serif;
+  font-weight: 600px;
+  color: black;
+  margin: 20px 0 0 0;
+}
+.title_content_description {
+  color: #495057;
+  font-family: sans-serif;
+  display: inline-block;
+  margin: 20px 0 0 0;
+  font-size: 19px;
+  font-weight: 100;
+}
+.button_getstarted {
+  padding: 10px 16px;
+  margin: 20px 20px 0 0;
+  font-size: 16px;
+  background-color: #6741d9;
+  border-radius: 10px;
+  border: none;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+}
+.button_getstarted:hover {
+  background-color: #050000;
+  color: #ffffff;
+  cursor: pointer;
+}
+.title_content_learnmore {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-weight: 500;
+}
