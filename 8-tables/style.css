@@ -1,1 +1,87 @@
 /* write your css here */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 1200px;
+  margin: 50px 50px 50px 50px;
+}
+/* used flex so for align button and text */
+.table_title_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* main title */
+.table_content_heading {
+  font-size: 30px;
+  font-family: sans-serif;
+  font-weight: 600px;
+  color: black;
+  margin: 20px 0 0 0;
+}
+.table_sub_heading {
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: 400px;
+  color: rgb(112, 102, 102);
+  margin: 10px 0 0 0;
+}
+/* table is starts from here */
+table {
+  font-size: 20px;
+  font-family: sans-serif;
+  width: 100%;
+  margin-top: 40px;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 15px 20px;
+
+  text-align: left;
+}
+
+th {
+  font-weight: bold;
+}
+/* to add border bottom in all rows */
+tr {
+  border-bottom: 1px solid #d3d3d3;
+}
+/* used psuedo class to make first column bold */
+td:first-child {
+  font-weight: bold;
+  color: black;
+}
+
+td {
+  color: #6b7280;
+}
+
+td a {
+  color: #6366f1;
+  text-decoration: none;
+}
+
+.button_adduser {
+  padding: 10px 16px;
+  margin: 20px 20px 0 0;
+  font-size: 16px;
+  background-color: #6741d9;
+  border-radius: 10px;
+  border: none;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+}
+.button_adduser:hover {
+  background-color: #050000;
+  color: #ffffff;
+  cursor: pointer;
+}

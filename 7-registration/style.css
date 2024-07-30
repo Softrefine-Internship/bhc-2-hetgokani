@@ -1,1 +1,159 @@
-/* write your css here */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  width: 1200px;
+  text-align: center;
+}
+
+.form_section {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  margin: 0 0 0 400px;
+  width: 400px;
+  text-align: center;
+}
+
+.logo img {
+  width: 40px;
+  margin: 100px 0 10px 0;
+}
+
+.title {
+  font-size: 24px;
+
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+}
+
+.remember-me input {
+  margin-right: 5px;
+}
+
+.forgot-password {
+  color: #6366f1;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.login-button {
+  background-color: #6366f1;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.login-button:hover {
+  background-color: #4f46e5;
+}
+
+.divider {
+  margin: 20px 0;
+  font-size: 14px;
+  color: #888;
+  position: relative;
+}
+
+.social-login {
+  display: flex;
+  justify-content: space-between;
+}
+
+.twitter-button,
+.github-button {
+  padding: 10px;
+  border: none;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  width: 48%;
+}
+
+.twitter-button {
+  background-color: #1da1f2;
+  color: white;
+}
+
+.github-button {
+  background-color: #333;
+  color: white;
+}
+
+.twitter-button:hover {
+  background-color: #0d8de1;
+}
+
+.github-button:hover {
+  background-color: #222;
+}
+.icons {
+  width: 22px;
+  height: 22px;
+  fill: white;
+  margin: 0 5px 0 30px;
+}
+
+.sign-up {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #888;
+  margin: 10px 0 100px 0;
+}
+
+.sign-up a {
+  color: #6366f1;
+  text-decoration: none;
+}
+
+.sign-up a:hover {
+  text-decoration: underline;
+}

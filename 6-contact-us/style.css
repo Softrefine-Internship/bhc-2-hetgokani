@@ -1,1 +1,154 @@
 /* write your css here */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 1200px;
+  background-color: white;
+  background-image: url("images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  padding: 40px;
+}
+.title {
+  text-align: center;
+}
+.contact_heading {
+  font-size: 40px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 550;
+  font-style: normal;
+  color: black;
+  margin: 15px 0 0 0;
+}
+.contact_heading_description {
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(85, 78, 78);
+  margin: 15px 0 0 0;
+}
+.form_area {
+  margin: 50px 0 0 0;
+}
+form {
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin: 0 0 5px 10px;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #0a0a0a;
+}
+
+input,
+select,
+textarea,
+button {
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid #746b6b7e;
+}
+
+.name_row {
+  display: inline-block;
+  width: 100%;
+}
+
+.first_name_column,
+.second_name_column {
+  display: inline-block;
+  width: 280px;
+  vertical-align: top;
+}
+
+textarea {
+  height: 100px;
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  margin: 20px 0 0 0;
+}
+
+.toggle input[type="checkbox"] {
+  display: none;
+}
+
+.toggle .toggle-label {
+  margin: 20px 0 0 0;
+  width: 50px;
+  height: 25px;
+  background-color: #ccc;
+  border-radius: 15px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.toggle .toggle-label::after {
+  content: "";
+  width: 21px;
+  height: 21px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: transform 0.3s;
+}
+
+.toggle input[type="checkbox"]:checked + .toggle-label {
+  background-color: #4a00e0;
+}
+
+.toggle input[type="checkbox"]:checked + .toggle-label::after {
+  transform: translateX(25px);
+}
+
+.toggle span {
+  margin-left: 10px;
+}
+
+.button_letstalk {
+  margin: 30px 0 0 0;
+  width: 100%;
+  background-color: #4a00e0;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 4px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+}
+
+a {
+  color: #4a00e0;
+  text-decoration: none;
+}
+.toggle_text {
+  display: block;
+  margin: 20px 0 5px 10px;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #0a0a0a;
+}
