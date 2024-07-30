@@ -1,1 +1,73 @@
 /* write your css here */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 1200px;
+}
+/* .newsletter background */
+.newsletter_background {
+  background-image: url(images/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  height: 400px;
+  margin: 20px 20px;
+  border-radius: 20px;
+}
+/* the whole content is placed here */
+.newsletter_content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.newsletter_title {
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+
+  font-style: normal;
+  font-weight: 500;
+  display: inline-block;
+  margin: 20px 0 0 0;
+  font-size: 35px;
+}
+/* newsletter description css */
+.newsletter_description {
+  color: #ced4da;
+  font-family: "Roboto", sans-serif;
+  font-weight: 350;
+  font-style: normal;
+
+  display: inline-block;
+  margin: 10px 0 0 0;
+  font-size: 20px;
+  line-height: 1.5;
+}
+input[type="email"] {
+  background-color: #ced4da5b;
+  border-radius: 10px;
+  padding: 10px 10px;
+  color: black;
+  width: 300px;
+  border: none;
+  margin: 25px 10px 0 0;
+}
+/* button css for notify  */
+.button_notify {
+  padding: 10px 18px;
+  margin: 25px 0 0 0;
+  font-size: 16px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: none;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: rgb(0, 0, 0);
+}

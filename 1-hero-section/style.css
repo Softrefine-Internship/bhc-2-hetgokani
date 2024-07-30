@@ -6,13 +6,14 @@
 }
 /* container code */
 .container {
-  background-image: url(images/background.jpg);
+  max-width: 1200px;
+  background-color: white;
+  background-image: url("images/bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
-  height: 100vh;
-  width: 1200px;
-  position: relative;
+  margin: 20px auto; /* Center the container with margins */
+  padding: 40px;
+  border-radius: 15px;
 }
 .logo {
   width: 60px;
