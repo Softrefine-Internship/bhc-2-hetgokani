@@ -8,13 +8,14 @@
 .container {
   max-width: 1200px;
   background-color: white;
-  background-image: url("images/background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: linear-gradient(140deg, #ffffff 0%, #ceabe2c7 50%, #cebcd3 100%);
+  border-radius: 30px;
+
   margin: auto;
   padding: 40px;
   height: 100vh;
 }
+
 .logo {
   width: 60px;
   height: 60px;
@@ -28,9 +29,10 @@
   display: flex;
   margin: -50px 0 0 0;
   align-items: center;
+  justify-content: space-between;
 }
 .nav {
-  margin: 0 0 0 250px;
+  margin: 0 225px 0 225px;
 }
 .nav_links {
   font-family: Arial, Helvetica, sans-serif;
@@ -40,14 +42,15 @@
   color: black;
   text-decoration: none;
 }
-/* used pseudo class */
-.nav_links:last-child {
-  margin: 0 0 0 200px;
+.nav_links:hover {
+  color: rgb(216, 34, 223);
+  cursor: pointer;
 }
 /* CODE REUSEABILITY FOR ICON ARROW */
 .home_icons {
   width: 15px;
   height: 15px;
+  vertical-align: middle;
   margin-right: 8px;
 }
 .title_content {
@@ -58,7 +61,7 @@
   font-family: sans-serif;
   font-size: 16px;
   font-weight: 100;
-  padding: 5px;
+  padding: 5px 5px 5px 10px;
 }
 /* used to make content in center */
 .hero_content {
@@ -85,7 +88,7 @@
   font-family: sans-serif;
   display: inline-block;
   margin: 20px 0 0 0;
-  font-size: 19px;
+  font-size: 17px;
   font-weight: 100;
 }
 .button_getstarted {

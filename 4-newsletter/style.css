@@ -9,10 +9,12 @@
 }
 /* .newsletter background */
 .newsletter_background {
-  background-image: url(images/bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  background: radial-gradient(
+    circle at 40% 130%,
+    rgba(79, 28, 92, 0.692) 0%,
+    rgb(14, 19, 29) 50%,
+    rgb(27, 44, 75) 100%
+  );
   position: relative;
   height: 400px;
   margin: 20px 20px;
@@ -49,13 +51,16 @@
   line-height: 1.5;
 }
 input[type="email"] {
-  background-color: #ced4da5b;
+  background: rgba(80, 75, 75, 0.199);
   border-radius: 10px;
   padding: 10px 10px;
   color: black;
   width: 300px;
   border: none;
   margin: 25px 10px 0 0;
+
+  border: 1px solid rgba(201, 201, 201, 0.329);
+  color: white;
 }
 /* button css for notify  */
 .button_notify {
@@ -70,4 +75,9 @@ input[type="email"] {
   font-weight: 500;
   font-style: normal;
   color: rgb(0, 0, 0);
+}
+.button_notify:hover {
+  cursor: pointer;
+  color: white;
+  background-color: black;
 }

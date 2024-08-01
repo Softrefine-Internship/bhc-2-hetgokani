@@ -76,7 +76,7 @@ body {
   color: #404447d2;
   display: flex;
   align-items: center;
-  margin: 10px 0 0 0;
+  margin: 20px 0 0 0;
 }
 
 .price_overview {
@@ -96,7 +96,15 @@ body {
   height: 560px;
   border-radius: 30px;
   text-align: left;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  position: relative;
+}
+.divider {
+  position: absolute;
+  top: 0;
+  right: -10px;
+  bottom: 0;
+  width: 2px;
+  background-color: #ddd;
 }
 .button_buynow {
   padding: 10px 120px;

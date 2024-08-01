@@ -36,13 +36,15 @@
           <input type="text" id="company" name="company" />
           <label for="email">Email</label>
           <input type="text" id="email" name="email" />
-          <label for="number">Phone number</label>
-          <input
-            type="phone_number"
-            id="phone_number"
-            name="phone_number"
-            placeholder="US 🔽"
-          />
+          <label for="email">Phone number</label>
+          <div class="phone_number_container">
+            <select id="country-code" class="option">
+              <option value="us">US</option>
+              <option value="ind">IN</option>
+            </select>
+          </div>
+
+          <input type="text" id="company" name="company" />
           <label for="message">Message</label>
           <textarea id="message" name="message"></textarea>
           <div class="toggle">

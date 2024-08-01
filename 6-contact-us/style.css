@@ -7,9 +7,7 @@
 .container {
   width: 1200px;
   background-color: white;
-  background-image: url("images/background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: linear-gradient(140deg, #ffffff 0%, #ceabe2c7 50%, #cebcd3 100%);
 
   padding: 40px;
 }
@@ -57,27 +55,73 @@ textarea,
 button {
   margin: 5px;
   padding: 10px;
-  border: 1px solid #ffffff;
+
   border-radius: 4px;
   box-sizing: border-box;
   width: 100%;
-  border: 1px solid #746b6b7e;
+
+  border: 1px solid rgba(199, 199, 199, 0.84);
+  padding: 10px;
+
+  margin-block: 10px;
+  box-shadow: 0px 0px 2px 0px black;
 }
 
 .name_row {
   display: inline-block;
   width: 100%;
+  gap: 20px;
+  display: flex;
 }
 
 .first_name_column,
 .second_name_column {
   display: inline-block;
-  width: 280px;
+  width: 295px;
   vertical-align: top;
 }
 
 textarea {
   height: 100px;
+}
+.phone_number_container {
+  position: relative;
+}
+.phone_box {
+  margin: 5px;
+  padding: 10px;
+
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 100%;
+
+  border: 1px solid rgba(199, 199, 199, 0.84);
+  padding: 10px;
+
+  margin-block: 10px;
+  box-shadow: 0px 0px 2px 0px black;
+}
+.phone_number_container select,
+.phone_number_container input {
+  width: auto;
+  flex: 1;
+  margin: 10px;
+  padding: 10px;
+
+  border-radius: 4px 0 0 4px;
+  box-shadow: none;
+}
+.option {
+  position: absolute;
+  font-size: 16px;
+
+  background-color: #ffffff00;
+  color: #7d7480;
+  border: none;
+}
+
+.phone_number_container input {
+  border-radius: 0 4px 4px 0;
 }
 
 .toggle {
@@ -138,7 +182,11 @@ textarea {
   font-style: normal;
   font-size: 16px;
 }
-
+.button_letstalk:hover {
+  cursor: pointer;
+  color: #4a00e0;
+  background-color: #ffffff;
+}
 a {
   color: #4a00e0;
   text-decoration: none;
